@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --animate-delay: 0.5s;
+  --red: #f04242;
+  --grey: #545454;
+  --natural: #efefef;
+  --sky: #caebfa;
+  --carbon: #a9a9a9;
+  --yellow:#faa400;
+  /* color: rgb(250, 164, 0); */
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  position: relative;
+  
+}
+
+.hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper {
+  max-width: 2560px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: var(--yellow);
+}
+
+.scroll-fix::before {
+  display: block;
+  margin-top: -53px;
+  height: 53px;
+  content: '';
+}
+/* -----------*/
+/* NAWGIACJA */
+/* -------- */
+
+nav {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  transition: background-color .6s;
+}
+.navbar-nav a{
+  color: #fff;
+}
+
+.navbar-toggler {
+  font-size: 3rem;
+}
+
+.navbar-toggler i {
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: none;
+  transition: color .3s;
+  color:  var(--yellow);
+  
+}
+.navbar-brand:hover{
+  color:  #ffff;
+}
+.navbar-brand:hover > i{
+  color:  var(--yellow);
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+.navbar-brand i{
+  color: #fff;
+  transition: color .3s;
+}
+.nav-link{
+  transition: color .3s;
+}
+
+.nav-link:hover {
+  /* box-shadow: 0px 2px 0px  #faa400; */
+  color:  var(--yellow);
+}
+
+.last-a{
+  margin-right: 20px;
+}
+
+.shadow-bg{
+  width: 100%;
+  background-color: rgba(0,0,0, .8);
+}
+
+
+/* -----------*/
+/* HEADER */
+/* -------- */
+
+header{
+  color: #fff;
+  overflow: hidden;
+}
+
+header h1 {
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 3rem;
+}
+
+header p {
+  padding: 10px;
+}
+
+.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/aple5-sm.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;  
+  color: #fff;
+  z-index: 10;
+}
+
+.hero-text span {
+  color:  var(--yellow);
+}
+
+.btn-outline-light{
+  text-transform: uppercase;
+}
+
+.btn-outline-light:hover{
+  color: #fff;
+  background: transparent;
+  border-color: var(--yellow);
+}
+
+.fa-chevron-down{
+  display: none;
+}
+
+/* MAIN *********************************************************************************************** */
+
+
+/* ************************ */
+/* New Products */
+/* ************************ */
+
+#newproducts .jumbotron{
+  border-top: 5px solid var(--yellow);
+  background-image: url('../img/light.jpg');
+}
+#newproducts .carousel-item {
+  position: relative;
+  height: 400px;
+}
+
+#newproducts .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#newproducts .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#newproducts .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#newproducts .carousel-caption h5{
+  text-shadow: 2px 2px 5px var(--yellow);
+  font-size: 3.5rem;
+}
+
+#newproducts .card{
+  margin: 10px 20px;
+  min-width: 200px;
+  text-align: center;
+} 
+
+#newproducts .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#newproducts .card h5{
+  font-size: 2.2rem;
+}
+
+
+/* ************************ */
+/* Popular */
+/* ************************ */
+
+#popular .jumbotron{
+  border-top: 5px solid var(--yellow);
+  background-image: url('../img/dark.jpg');
+}
+
+#popular .underline{
+  margin: 0 auto 10px;
+}
+
+#popular .carousel-item {
+  position: relative;
+  height: 350px;
+}
+
+#popular .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+}
+
+#popular .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 35px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#popular .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#popular .carousel-caption h5{
+  text-shadow: 2px 2px 5px var(--yellow);
+  font-size: 2rem;
+}
+
+#popular .card{
+  margin: 10px 20px;
+  min-width: 200px;
+  text-align: center;
+} 
+
+#popular .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#popular .card h5{
+  font-size: 2.2rem;
+}
+
+#popular .wrapper {
+ 
+  width: 95%;
+  
+}
+
+.budowa {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/budowa-lg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+@media (min-width:375px){
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  #popular .underline{
+    margin: 0 auto 25px;
+  }
+}
+
+/* @media (min-width:1400px){
+  .carousel-item{
+    height: 600px;
+  }
+  .carousel-img-one{
+    background-image: url('../img/grill2.jpg');
+  }
+  
+  .carousel-img-two{
+    background-image: url('../img/truskawka.jpg');
+  }
+  
+  .carousel-img-three{
+    background-image: url('../img/wina.jpg');
+  }
+} */
+
+
+
+

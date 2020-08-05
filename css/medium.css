@@ -1,0 +1,16 @@
+header h1 {
+    font-size: 4.2rem;
+  }
+
+  header p {
+    font-size: 2.2rem;
+  }
+
+
+  /* MAIN */
+
+  /* POPULAR */
+
+  #popular .underline{
+    margin: 0 auto 40px;
+  }

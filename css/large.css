@@ -1,0 +1,13 @@
+/* ***************** */
+/* HEADER */
+/* ***************** */
+header .fa-chevron-down {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: bounce 1.6s infinite;
+    color: #fff;
+}
