@@ -14,3 +14,7 @@ header h1 {
   #popular .underline{
     margin: 0 auto 40px;
   }
+
+  #popular button:hover {
+    box-shadow: 2px 2px 2px var(--yellow);
+  }

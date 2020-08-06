@@ -11,3 +11,24 @@ header .fa-chevron-down {
     animation: bounce 1.6s infinite;
     color: #fff;
 }
+
+
+
+@media (min-width: 1200px) {
+    #category .card-text{
+        font-size: 1.6rem;
+      }
+
+      #category .card-titlet{
+        font-size: 1.8rem;
+      }
+  }
+
+  @media (min-width: 1800px) {
+    #category .card-text{
+        font-size: 1.8rem;
+      }
+      #category .card-titlet{
+        font-size: 2rem;
+      }
+  }
