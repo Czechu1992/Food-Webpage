@@ -64,6 +64,8 @@ h2 {
   content: '';
 }
 
+
+
 /* -----------*/
 /* NAWGIACJA */
 /* -------- */
@@ -73,6 +75,14 @@ nav {
   text-transform: uppercase;
   border-bottom: 1px solid #fff;
   transition: background-color .6s;
+}
+
+.navbar .active{
+  color: var(--yellow);
+}
+
+.navbar .active:hover{
+  color: #fff;
 }
 
 .nav-item {
@@ -161,6 +171,16 @@ header p {
   position: relative;
   height: 100vh;
   background-image: url("../img/aple5-sm.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.hero-img-category {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/kategorie/tlo-lg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -380,7 +400,6 @@ header p {
 
 #category .jumbotron {
   position: relative;
-  /* position: relative; */
   border-top: 5px solid var(--yellow);
   background-image: url('../img/kategorie/tlo-sm.jpg');
   background-attachment: fixed;
