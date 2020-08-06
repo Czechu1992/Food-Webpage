@@ -248,6 +248,7 @@ header p {
 #popular .jumbotron{
   border-top: 5px solid var(--yellow);
   background-image: url('../img/dark.jpg');
+  z-index: -1;
 }
 
 #popular .underline{
@@ -281,13 +282,46 @@ header p {
   padding-bottom: 20px;
 }
 
+
+
+#popular button{
+  position: absolute;
+  display: block;
+  padding: 0 30px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black; 
+}
+
+#popular .prev-button{
+  bottom: -55px;
+  left: 30px;
+}
+
+#popular .next-button{
+  bottom: -55px;
+  right: 30px;
+}
+
+#popular  i{
+  text-align: center;
+  font-size: 4rem;
+}
+
+/* #popular .carousel-control-prev{
+  bottom: -20px;
+  color: black;
+  opacity: 1;
+} */
+
 #popular .carousel-caption h5{
   text-shadow: 2px 2px 5px var(--yellow);
   font-size: 2rem;
 }
 
 #popular .card{
-  margin: 10px 20px;
+  margin: 10px 5px;
   min-width: 200px;
   text-align: center;
 } 
@@ -302,9 +336,8 @@ header p {
 }
 
 #popular .wrapper {
- 
+  padding-bottom: 40px;
   width: 95%;
-  
 }
 
 .budowa {
@@ -325,6 +358,11 @@ header p {
   #popular .underline{
     margin: 0 auto 25px;
   }
+
+  #popular button{
+    padding: 0 40px;
+  }
+  
 }
 
 /* @media (min-width:1400px){
