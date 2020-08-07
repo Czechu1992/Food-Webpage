@@ -187,7 +187,7 @@ header p {
   z-index: 0;
 }
 
-.hero-img-producers {
+#producers-page .hero-img-producers {
   position: relative;
   height: 100vh;
   background-image: url("../img/producesrhero-lg.jpg");
@@ -197,7 +197,7 @@ header p {
   z-index: 0;
 }
 
-.hero-img-tradicional {
+#tradicional-page .hero-img-tradicional {
   position: relative;
   height: 100vh;
   background-image: url("../img/tradicionalhero-lg.jpg");
@@ -207,7 +207,7 @@ header p {
   z-index: 0;
 }
 
-.hero-img-contact {
+#contact-page .hero-img-contact {
   position: relative;
   height: 100vh;
   background-image: url("../img/contacthero-lg.jpg");
