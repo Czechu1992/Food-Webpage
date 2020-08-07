@@ -225,7 +225,7 @@ header p {
 
 #newproducts .jumbotron {
   border-top: 5px solid var(--yellow);
-  border-bottom: 5px solid var(--yellow);
+  /* border-bottom: 5px solid var(--yellow); */
   background-image: url('../img/light.jpg');
 }
 
@@ -425,28 +425,28 @@ header p {
   border: none;
 }
 
-#category .card img {
+#category .index-categories .card img {
   height: 300px;
   object-fit: cover;
 }
 
-#category .card-body {
+#category .index-categories .card-body {
   background-image: url('../img/light.jpg');
-  height: 150px;
+  height: 120px;
 }
 
-#category .card-title {
+#category .index-categories .card-title {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 
-#category .card-text {
+#category .index-categories .card-text {
   font-size: 1.4rem;
 }
 
-#category .card-footer {
+#category .index-categories .card-footer {
   border: 1px solid black;
   background-image: url('../img/dark.jpg');
   transition: border .3s;
@@ -508,6 +508,184 @@ header p {
   font-weight: normal;
   line-height: 50px;
   margin: 0;
+}
+
+/* CATEGORY-PAGE *************************** */
+#category .category-page-jumbotron{
+  background-image: url('../img/dark.jpg');
+  padding-bottom: 70px;
+  background-attachment: scroll;
+  background-size:auto ;
+  
+}
+#category .category-page-jumbotron h2{
+  color: black;
+}
+
+#category .category-page-jumbotron .card-footer{
+  background-image: url('../img/light.jpg');
+}
+
+#all-categories .jumbotron{
+  border-top: 5px solid var(--yellow);
+  border-bottom: 5px solid var(--yellow);
+  background-image: url('../img/light.jpg');
+}
+
+#all-categories .wrapper {
+width: 90%;
+}
+
+#all-categories img {
+  height: 240px;
+  object-fit: cover;
+}
+
+#all-categories .btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: background-color .3s, color .3s;
+}
+
+#all-categories .card .btn:hover{
+  background-color: var(--yellow);
+  color: black;
+}
+
+#all-categories .card-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#all-categories .card-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  height: 80px;
+}
+
+#all-categories .underline {
+  margin: 0 auto;
+}
+
+#all-categories .change-view{
+  margin: 15px;
+}
+
+#all-categories .change-view i {
+  padding: 15px;
+  font-size: 3rem;
+}
+
+#all-categories .change-view i:hover{
+color: var(--yellow);
+}
+
+#all-categories .change-view .active {
+  color: var(--yellow);
+}
+#all-categories .list-group{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#all-categories .list-group a:nth-child(even){
+/* background-color: rgba(250, 164, 0, 0.55) ; */
+background-image: url('../img/dark.jpg');
+}
+
+#all-categories .list-group a:hover{
+  background-color: rgba(250, 164, 0, .7);
+  background-image: none;
+}
+
+/* #all-categories .card-body{
+  height: 200px;
+} */
+
+
+/* ********************************** */
+/* Contact */
+/* ********************************** */
+
+#contact .jumbotron {
+  position: relative;
+  
+  border-bottom: 5px solid var(--yellow);
+  background-image: url('../img/contact-home-bg/pole2-sm.jpg');
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+
+#contact .contact-other-pages h2{
+  color: #fff;
+}
+
+#contact .contact-shadow{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: -10;
+}
+
+#contact .contact-us {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+#contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+
+#contact .contact-us .contact-item h3{
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item .social-media{
+  font-size: 2.6rem;
+}
+
+#contact .contact-us .contact-item .social-media a{
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px var(--yellow);
+  transition:  text-shadow .3s, color .3s;
+}
+
+#contact .contact-us .contact-item .social-media a:hover{
+  text-shadow:none;
+  color: var(--yellow);
+}
+
+/* CONTACT INDEX *********************/
+#contact .contact-index{
+  border-top: 5px solid var(--yellow);
+  background-image: url('../img/dark.jpg');
+  border-bottom: 2px solid var(--yellow);
+  background-attachment: scroll;
+  background-size:auto ;
+  padding: 20px 0;
+}
+
+#contact .contact-index h2{
+  color: black;
+}
+
+#contact .contact-index .underline {
+  margin: 0 auto;
 }
 
 /* ********************************** */

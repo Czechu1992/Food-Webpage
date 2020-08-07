@@ -1,34 +1,64 @@
 /* ***************** */
 /* HEADER */
 /* ***************** */
+
+nav {
+  font-size: 1.3rem;
+}
+
+.nav-item {
+  margin: 0 7px;
+}
+
+.last-a {
+  margin-right: 20px;
+}
+
+
+/* ***************** */
+/* HEADER */
+/* ***************** */
 header .fa-chevron-down {
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    font-size: 30px;
-    left: 50%;
-    transform: translate(-50%);
-    animation: bounce 1.6s infinite;
-    color: #fff;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: bounce 1.6s infinite;
+  color: #fff;
 }
 
 
 
 @media (min-width: 1200px) {
-    #category .card-text{
-        font-size: 1.6rem;
-      }
-
-      #category .card-titlet{
-        font-size: 1.8rem;
-      }
+  nav {
+    font-size: 1.4rem;
   }
 
-  @media (min-width: 1800px) {
-    #category .card-text{
-        font-size: 1.8rem;
-      }
-      #category .card-titlet{
-        font-size: 2rem;
-      }
+  .nav-item {
+    margin: 0 10px;
   }
+  
+  .last-a {
+    margin-right: 20px;
+  }
+
+  #category .card-text {
+    font-size: 1.6rem;
+  }
+
+  #category .card-titlet {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  #category .card-text {
+    font-size: 1.8rem;
+  }
+
+  #category .card-titlet {
+    font-size: 2rem;
+  }
+}
