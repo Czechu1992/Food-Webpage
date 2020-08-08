@@ -18,6 +18,27 @@ nav {
 /* ***************** */
 /* HEADER */
 /* ***************** */
+
+#home .hero-img{
+  background-image: url("../img/aple5-lg.jpg");
+}
+
+#category-page .hero-img {
+  background-image: url("../img/kategorie/tlo-lg.jpg");
+}
+
+#producers-page .hero-img{
+  background-image: url("../img/producesrhero-lg.jpg");
+}
+
+#tradicional-page .hero-img {
+  background-image: url("../img/tradicionalhero-lg.jpg");
+}
+
+#contact-page .hero-img {
+  background-image: url("../img/contacthero-lg.jpg");
+}
+
 header .fa-chevron-down {
   display: block;
   position: absolute;

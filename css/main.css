@@ -170,51 +170,30 @@ header p {
 .hero-img {
   position: relative;
   height: 100vh;
+  
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+#home .hero-img{
   background-image: url("../img/aple5-sm.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
 }
 
-.hero-img-category {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/kategorie/tlo-lg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
+#category-page .hero-img {
+  background-image: url("../img/kategorie/tlo-sm.jpg");
 }
 
-#producers-page .hero-img-producers {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/producesrhero-lg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
+#producers-page .hero-img{
+  background-image: url("../img/producesrhero-sm.jpg");
 }
 
-#tradicional-page .hero-img-tradicional {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/tradicionalhero-lg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
+#tradicional-page .hero-img {
+  background-image: url("../img/tradicionalhero-sm.jpg");
 }
 
-#contact-page .hero-img-contact {
-  position: relative;
-  height: 100vh;
+#contact-page .hero-img {
   background-image: url("../img/contacthero-lg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
 }
 
 .hero-text {
@@ -455,6 +434,10 @@ header p {
   border: none;
 }
 
+#category .best-producer-card img{
+  max-height: 200px;
+}
+
 #category .index-categories .card img {
   height: 300px;
   object-fit: cover;
@@ -548,6 +531,7 @@ header p {
   background-size:auto ;
   
 }
+
 #category .category-page-jumbotron h2{
   color: black;
 }
@@ -609,6 +593,11 @@ width: 90%;
 #all-categories .change-view i {
   padding: 15px;
   font-size: 3rem;
+  transition: color .3s;
+}
+
+#all-categories .change-view i:focus {
+ outline-color: black;
 }
 
 #all-categories .change-view i:hover{
@@ -618,10 +607,21 @@ color: var(--yellow);
 #all-categories .change-view .active {
   color: var(--yellow);
 }
-#all-categories .list-group{
+#all-categories .list-group a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#all-categories .list-group a p{
+  margin: 0 10px 0 0;
+}
+
+#all-categories .list-group span{
+  font-size: 1.2rem;
 }
 
 #all-categories .list-group a:nth-child(even){
@@ -632,6 +632,19 @@ background-image: url('../img/dark.jpg');
 #all-categories .list-group a:hover{
   background-color: rgba(250, 164, 0, .7);
   background-image: none;
+}
+
+/* PRODUCERS PAGE ******************* */
+
+#category .producers-page-jumbotron {
+  background-image: url('../img/light.jpg');
+  padding-bottom: 70px;
+  background-attachment: scroll;
+  background-size:auto ;
+}
+
+#category .producers-page-jumbotron h2{
+  color: black;
 }
 
 /* #all-categories .card-body{
