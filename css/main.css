@@ -494,16 +494,18 @@ header p {
 
 #category .all-category-btn {
   position: absolute;
+  bottom: 40px;
+  left: 50%;
+  height: 50px;
+  /* width: 250px; */
   padding: 0 30px;
   border: 1px solid black;
+  border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
   transition: border .3s, box-shadow .3s, background-image .3s;
-  bottom: 40px;
-  left: 50%;
-  height: 50px;
-  width: 250px;
+  
   text-align: center;
   transform: translate(-50%);
   cursor: pointer;
@@ -526,10 +528,9 @@ header p {
 /* CATEGORY-PAGE *************************** */
 #category .category-page-jumbotron{
   background-image: url('../img/dark.jpg');
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   background-attachment: scroll;
   background-size:auto ;
-  
 }
 
 #category .category-page-jumbotron h2{
@@ -565,6 +566,10 @@ width: 90%;
   background-color: var(--yellow);
   color: black;
 }
+/* 
+#all-categories .card {
+  padding: 5px 15px;
+} */
 
 #all-categories .card-title {
   font-size: 1.4rem;
@@ -776,6 +781,10 @@ footer i {
 
   #category .card-text {
     font-size: 1.5rem;
+  }
+
+  #category .category-page-jumbotron{
+    padding-bottom: 30px;
   }
 
 }
