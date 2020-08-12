@@ -31,7 +31,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
   z-index: -10;
 }
 
@@ -170,7 +170,6 @@ header p {
 .hero-img {
   position: relative;
   height: 100vh;
-  
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -212,6 +211,7 @@ header p {
 }
 
 .btn-outline-light {
+
   text-transform: uppercase;
 }
 
@@ -224,6 +224,9 @@ header p {
 .fa-chevron-down {
   display: none;
 }
+
+/* CATEGORY-PAGE ********************* */
+
 
 /* MAIN *********************************************************************************************** */
 
@@ -288,6 +291,7 @@ header p {
 /* ************************ */
 
 #popular .jumbotron {
+  /* padding: 40px 0 20px; */
   position: relative;
   border-top: 5px solid var(--yellow);
   background-image: url('../img/dark.jpg');
@@ -326,12 +330,14 @@ header p {
 
 #popular button {
   position: absolute;
-  padding: 0 30px;
+  padding: 0 20px;
   border: 1px solid black;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
   transition: border .3s, box-shadow .3s;
+  /* border-radius: 5px; */
+  z-index: 5;
 }
 
 #popular button:hover {
@@ -339,19 +345,25 @@ header p {
   box-shadow: 1px 1px 1px var(--yellow);
 }
 
+#popular .carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+}
+
 #popular .prev-button {
-  bottom: -55px;
+  /* border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; */
+  bottom: -40px;
   left: 30px;
 }
 
 #popular .next-button {
-  bottom: -55px;
+  bottom: -40px;
   right: 30px;
 }
 
 #popular i {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 #popular .carousel-caption h5 {
@@ -380,20 +392,22 @@ header p {
 }
 
 #popular .all-products-btn {
-  bottom: 20px;
+  position: absolute;
+  bottom: 40px;
   left: 50%;
-  height: 50px;
-  width: 250px;
+  padding: 0 20px;
+  height: 35px;
+  width: 150px;
   text-align: center;
   transform: translate(-50%);
-  cursor: pointer;
-  background-image: url('../img/light.jpg');
+  background-color: #fff;
+  opacity: 1;
 }
 
 #popular .all-products-btn p {
-  font-size: 2.5rem;
-  font-weight: normal;
-  line-height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 /* #popular .all-products-btn:hover {
@@ -414,7 +428,7 @@ header p {
   background-attachment: fixed;
   background-size: cover;
   z-index: 0;
-  padding-bottom: 130px;
+  padding-bottom: 80px;
 }
 
 #category .category-shadow {
@@ -423,7 +437,7 @@ header p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .8);
-  z-index: -1;
+  z-index: -10;
 }
 
 #category h2 {
@@ -494,13 +508,13 @@ header p {
 
 #category .all-category-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 35px;
   left: 50%;
-  height: 50px;
-  /* width: 250px; */
-  padding: 0 30px;
+  height: 35px;
+
+  padding: 0 20px;
   border: 1px solid black;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   text-transform: uppercase;
   font-weight: bold;
   color: black;
@@ -519,13 +533,12 @@ header p {
 }
 
 #category .all-category-btn p {
-  font-size: 2.5rem;
-  font-weight: normal;
-  line-height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
   margin: 0;
 }
 
-/* CATEGORY-PAGE *************************** */
+/* CATEGORY-PAGE ********************************************************************************** */
 #category .category-page-jumbotron{
   background-image: url('../img/dark.jpg');
   padding-bottom: 20px;
@@ -619,6 +632,7 @@ color: var(--yellow);
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
+  transition: background-color .3s;
 }
 
 #all-categories .list-group a p{
@@ -626,7 +640,8 @@ color: var(--yellow);
 }
 
 #all-categories .list-group span{
-  font-size: 1.2rem;
+  margin-right: 15px;
+  font-size: 1.5rem;
 }
 
 #all-categories .list-group a:nth-child(even){
@@ -771,6 +786,14 @@ footer i {
     font-size: 3.5rem;
   }
 
+  .hero-text {
+    font-size: 1.8rem;
+  }
+  
+  .btn-outline-light {
+    font-size: 1.3rem;
+  }
+
   #popular .underline {
     margin: 0 auto 25px;
   }
@@ -783,9 +806,9 @@ footer i {
     font-size: 1.5rem;
   }
 
-  #category .category-page-jumbotron{
-    padding-bottom: 30px;
-  }
+  /* #category .category-page-jumbotron{
+    padding-bottom: 25px;
+  } */
 
 }
 

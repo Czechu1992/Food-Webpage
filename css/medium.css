@@ -19,9 +19,9 @@ header h1 {
     box-shadow: 2px 2px 2px var(--yellow);
   }
 
-  #category .all-category-btn {
+  /* #category .all-category-btn {
      width: 250px;
-  }
+  } */
 
   #category .category-page-jumbotron{
     padding-bottom: 60px;

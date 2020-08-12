@@ -1,5 +1,5 @@
 /* ***************** */
-/* HEADER */
+/* NAV */
 /* ***************** */
 
 nav {
@@ -50,6 +50,21 @@ header .fa-chevron-down {
   color: #fff;
 }
 
+#popular .all-products-btn {
+  bottom: 30px;
+  padding: 0 30px;
+  height: 35px;
+  width: 200px;
+}
+
+#popular .all-products-btn p {
+  font-size: 2.2rem;
+}
+
+#category .all-category-btn {
+  bottom: 25px;
+  width: 200px;
+}
 
 
 @media (min-width: 1200px) {
